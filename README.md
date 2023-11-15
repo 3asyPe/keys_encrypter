@@ -1,6 +1,6 @@
 # keys encrypter
 
-Encrypts any string in input.txt file to output.txt with generated secret_key
+Encrypts any strings in input.txt file to output.txt with generated secret_key
 
 **How to install**
 ```
@@ -8,7 +8,7 @@ pip install -r requirements.txt
 ```
 **How to run**
 
-1) Input your string to input.txt file
+1) Input your strings to input.txt file
 
 2) To encrypt run
 
@@ -16,7 +16,7 @@ pip install -r requirements.txt
 python encrypt.py
 ```
 
-3) Get your encrypted string in output.txt
+3) Get your encrypted strings in output.txt
 
 4) Save secret_key printed during the encryption and use it when you need to decrypt it by setting it as an environment variable
 
