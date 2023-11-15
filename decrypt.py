@@ -1,30 +1,3 @@
-# keys encrypter
-
-Encrypts any string in input.txt file to output.txt with generated secret_key
-
-**How to install**
-```
-pip install -r requirements.txt
-```
-**How to run**
-
-1) Input your string to input.txt file
-
-2) To encrypt run
-
-```
-python encrypt.py
-```
-
-3) Get your encrypted string in output.txt
-
-4) Save secret_key printed during the encryption and use it when you need to decrypt it by setting it as an environment variable
-
-5) (Optional) Input your encrypted strings to input.txt and run decrypt.py file to test that it's working
-
-**How to decrypt it in code**
-If you need these strings to use in your script decrypt them in such way:
-```
 import os
 from Crypto.Cipher import AES
 from Crypto.Util.Padding import unpad
@@ -55,4 +28,5 @@ with open(input_filename, 'r') as file:
             cipher = AES.new(secret_key, AES.MODE_CBC, iv)
             pt = unpad(cipher.decrypt(ct), AES.block_size).decode('utf-8')
             STRINGS.append(pt.strip())
-```
+
+print(STRINGS)
