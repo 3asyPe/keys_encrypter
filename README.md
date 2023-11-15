@@ -39,7 +39,6 @@ secret_key = bytes.fromhex(os.environ['SECRET_KEY'])
 
 # File path
 input_filename = 'input.txt'  # Replace with your file path
-output_filename = 'output.txt'
 
 STRINGS = []
 
