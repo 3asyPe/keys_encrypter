@@ -56,3 +56,5 @@ with open(input_filename, 'r') as file:
             pt = unpad(cipher.decrypt(ct), AES.block_size).decode('utf-8')
             STRINGS.append(pt.strip())
 ```
+
+TG channel - https://t.me/easypeoff
